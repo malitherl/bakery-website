@@ -4,10 +4,10 @@ html, body {
 
 #bar {
     display: flex;
-    width: 49%;
+    width: 50%;
     margin: 0 auto;
     background-color: rgb(25, 25, 25);
-    padding: 10px;
+    height: 45px;
     justify-content: center;
 }
 
@@ -52,7 +52,7 @@ html, body {
     width: 10px;
     border-radius: 50%;
     display: flex;
-    margin: 10px;
+    margin: 15px;
     transition: background-color 2s ease-in-out;
     -webkit-transition: background-color 2s ease-in-out;
 }
