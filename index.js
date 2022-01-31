@@ -7,7 +7,8 @@
             const container= document.getElementById("container");
             const scrollBar = document.createElement("DIV");
             scrollBar.setAttribute("id", "bar");
-            
+
+            //file paths and attributions
 
             let imagesSource = ['pexels-ali-rashidi-9419469.jpg', 
                         'pexels-anastasia-zhenina-4033592.jpg',
@@ -18,10 +19,17 @@
             let imageCarousel =[];
             let current =0;
             
+            //For each file path given, we create a new image element. 
+            //We also create another 'dot' for the navigation at the bottom of the wheel and append the dot to the wheel for each iteration.
+            //Giving the dots data-attributes gives the currentImage(prop) function below a means of transitioning between images. 
+            
             for(let i =0; i < imagesSource.length ; i++) {
                 let img= document.createElement("img");
                 let dot= document.createElement("div");
                 dot.dataset.id=i;
+                dot.addEventListener("click", () => {
+                    currentImage(dot.dataset.id)
+                })
                 dot.setAttribute("class", "images dot");
                 img.setAttribute("class", "carousel");
                 img.src=imagesSource[i];
@@ -39,10 +47,6 @@
                 current=i;
             }
             container.appendChild(scrollBar);
-    
-            Array.from(container.getElementsByClassName("images")).forEach(element => {
-                  element.addEventListener("click", ()=> {
-                    currentImage(element.dataset.id);
-                  })
-              })
+            
+           
              

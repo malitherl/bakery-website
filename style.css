@@ -2,6 +2,27 @@ html, body {
     margin: 0 0px;
 }
 
+.navbar ul {
+    margin: 0;
+    list-style-type: none;
+    display:flex;
+    position: absolute;
+    top: 35%;
+}
+
+.navbar li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.navbar {
+    margin-top: 0px;
+    background-color: rgb(25, 25, 25);
+    height: 10vh;
+    position: relative;
+}
+
 #bar {
     display: flex;
     width: 50%;
