@@ -1,0 +1,67 @@
+html, body {
+    margin: 0 0px;
+}
+
+#bar {
+    display: flex;
+    width: 49%;
+    margin: 0 auto;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    justify-content: center;
+}
+
+
+.carousel {
+    width: 50%;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+
+}
+
+ 
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+#container {
+    width: 100%;
+}
+
+#current {
+    display:block;
+}
+
+.dot {
+    background-color: grey;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: flex;
+    margin: 10px;
+    transition: background-color 2s ease-in-out;
+    -webkit-transition: background-color 2s ease-in-out;
+}
+
+.dot:hover {
+    background-color: white;
+    height: 12px;
+    width: 12px;
+}
+
+
+

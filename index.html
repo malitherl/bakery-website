@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+      <!--Photo by Ali Rashidi from Pexels-->
+        
+      <!--Photo by Stefan Prutsch from Pexels-->
+
+      <!--Photo by Anastasia Zhenina from Pexels-->
+    <script>
+            const container= document.getElementById("container")
+            let images = ['pexels-ali-rashidi-9419469.jpg', 
+                        'pexels-anastasia-zhenina-4033592.jpg',
+                            'pexels-stefan-prutsch-6449392.jpg' ]
+            let imageCarousel =[];
+            let current =0;
+            images.forEach(e => {
+                let image= document.createElement("img");
+                image.setAttribute("class", "carousel");
+                image.src=e;
+                imageCarousel.push(image);
+                container.appendChild(image);
+            })
+            imageCarousel[current].style.display="block";
+
+            function currentImage(i) {
+                imageCarousel[current].style.display="none";
+                imageCarousel[i].style.display= "block";
+                current=i;
+            }
+    </script>
+        <div id="bar"> 
+          <div data-id="0" class="images dot"></div>
+          <div data-id="1" class="images dot"></div>
+          <div data-id="2" class="images dot"></div>
+        </div>
+    <script>
+              Array.from(container.getElementsByClassName("images")).forEach(element => {
+                  element.addEventListener("click", ()=> {
+                    currentImage(element.dataset.id);
+                  })
+              })
+             
+    </script>
+  </div>
+</body>
+</html>
