@@ -25,28 +25,41 @@
             
             for(let i =0; i < imagesSource.length ; i++) {
                 let img= document.createElement("img");
-                let dot= document.createElement("div");
-                dot.dataset.id=i;
-                dot.addEventListener("click", () => {
-                    currentImage(dot.dataset.id)
-                })
-                dot.setAttribute("class", "images dot");
+                img.dataset.id=i;
                 img.setAttribute("class", "carousel");
                 img.src=imagesSource[i];
                 img.alt=imageCredits[i];
                 imageCarousel.push(img);
                 container.appendChild(img);
-                scrollBar.appendChild(dot);
             }
 
-            imageCarousel[current].style.display="block";
+            document.getElementById("back").addEventListener("click", ()=> {
+                if(current-1 < 0){
+                    currentImage(imageCarousel.length-1);
+                } else {
+                    currentImage(current-1)
+                }
+            })
+
+            document.getElementById("forward").addEventListener("click", ()=> {
+                if(current+1 == imageCarousel.length){
+                    currentImage(0);
+                } else {
+                    currentImage(current+1)
+                }
+            })
+
+
+            imageCarousel[0].style.display="block";
 
             function currentImage(i) {
                 imageCarousel[current].style.display="none";
+
                 imageCarousel[i].style.display= "block";
                 current=i;
             }
-            container.appendChild(scrollBar);
+
+    
             
            
              

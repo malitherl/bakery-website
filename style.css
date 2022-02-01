@@ -62,11 +62,9 @@ html, body {
 }
 
 
-
-
 .carousel {
-    width: 50%;
-    height: 50vh;
+    width: 100vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     display: none;
@@ -76,7 +74,7 @@ html, body {
     animation-timing-function: ease-in;
     animation-duration: 1.5s;
     position: relative;
-    z-index: 0;
+    z-index: -1;
 }
 
  
@@ -92,13 +90,34 @@ html, body {
 
 
 #container {
-    width: 100%;
-    display: grid;
+    position: relative;
+    width: 95vw;
+}
+
+.container-text {
+    position:absolute;
+    z-index: 1;
 }
 
 #current {
     display:block;
 }
+
+
+#back {
+    margin-left: 10px;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    float: left;
+}
+
+#forward {
+    margin-right: 10px;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    float: right;
+}
+
 
 .dot {
     background-color: grey;
@@ -117,6 +136,35 @@ html, body {
     width: 12px;
 }
 
-
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    margin: 0px;
+    z-index: 1;
+    top: 50%;
+    color: white;
+    padding: 10px;
+    background-color: rgba(25, 25, 25, .5);
+  }
 
 
