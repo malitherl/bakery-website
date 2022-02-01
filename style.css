@@ -120,6 +120,17 @@ html, body {
     float: right;
 }
 
+.title-card {
+    border: whitesmoke 1px solid;
+    top: 40%;
+    left: 50%;
+    display: grid;
+    padding: 10px;
+    color: whitesmoke;
+    
+}
+
+
 
 .dot {
     background-color: grey;
