@@ -1,5 +1,6 @@
 html, body {
     margin: 0 0px;
+    overflow-x: hidden;
 }
 
 .navbar a {
@@ -20,7 +21,7 @@ html, body {
     height: 10vh;
     position: relative;
     display: flex;
-    
+    width: 100vw;
 }
 
 #bar {
@@ -180,3 +181,24 @@ html, body {
   }
 
 
+.blurb1 {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.blurb1a {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.container2 {
+    
+}
+
+.container2-bg {
+    width: 100vw;
+    height: 75vh;
+}
