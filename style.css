@@ -75,6 +75,7 @@ html, body {
     animation-duration: 1.5s;
     position: relative;
     z-index: -1;
+    background-color: rgb(25, 25, 25);
 }
 
  
@@ -92,6 +93,7 @@ html, body {
 #container {
     position: relative;
     width: 95vw;
+
 }
 
 .container-text {
@@ -164,7 +166,6 @@ html, body {
     top: 50%;
     color: white;
     padding: 10px;
-    background-color: rgba(25, 25, 25, .5);
   }
 
 

@@ -10,12 +10,12 @@
 
             //file paths and attributions
 
-            let imagesSource = ['pexels-ali-rashidi-9419469.jpg', 
-                        'pexels-anastasia-zhenina-4033592.jpg',
-                            'pexels-stefan-prutsch-6449392.jpg' ]
-            let imageCredits= ["Photo by Ali Rashidi from Pexels", 
-                                "Photo by Stefan Prutsch from Pexels",
-                                "Photo by Anastasia Zhenina from Pexels"];
+            let imagesSource = ['pexels-tom-balabaud-1579739.jpg', 
+                        'pexels-creative-vix-370984.jpg',
+                            'pexels-kaboompics-com-6267.jpg' ]
+            let imageCredits= ["Photo by tom balabaud from Pexels", 
+                                "Photo by Creative Vix from Pexels",
+                                "Photo by Kaboompics .com from Pexels"];
             let imageCarousel =[];
             let current =0;
             
