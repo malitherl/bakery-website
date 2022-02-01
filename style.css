@@ -2,17 +2,15 @@ html, body {
     margin: 0 0px;
 }
 
-.navbar ul {
+.navbar a {
+    float: left;
     margin: 0;
-    list-style-type: none;
-    display:flex;
-    position: absolute;
-    top: 35%;
+    padding: 20px;
+
 }
 
-.navbar li {
-    margin-left: 15px;
-    margin-right: 15px;
+.navbar a:hover {
+    background-color: violet;
 }
 
 
@@ -21,6 +19,8 @@ html, body {
     background-color: rgb(25, 25, 25);
     height: 10vh;
     position: relative;
+    display: flex;
+    
 }
 
 #bar {
@@ -31,6 +31,37 @@ html, body {
     height: 45px;
     justify-content: center;
 }
+
+.dropdown {
+   display: flex;
+   position: relative;
+   margin-left: 10vw;
+}
+
+.dropdown-content {
+    display: none;
+    color:black;
+    top:100%;
+    position: absolute;
+    height: 30vh;
+    border: 1px black solid;
+    z-index: 1;
+    padding: 20px;
+    background-color: thistle;
+}
+
+.dropdown-content a {
+    margin: 0px;
+    padding: 0;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: grid;
+    
+}
+
+
 
 
 .carousel {
@@ -44,7 +75,8 @@ html, body {
     animation-name: fade;
     animation-timing-function: ease-in;
     animation-duration: 1.5s;
-
+    position: relative;
+    z-index: 0;
 }
 
  
@@ -61,6 +93,7 @@ html, body {
 
 #container {
     width: 100%;
+    display: grid;
 }
 
 #current {
@@ -83,6 +116,7 @@ html, body {
     height: 12px;
     width: 12px;
 }
+
 
 
 
