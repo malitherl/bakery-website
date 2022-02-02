@@ -204,11 +204,39 @@ html, body {
     margin: 0 auto;
 }
 
-.container2 {
+.container2{
+    position: relative;
+    z-index: -2;
+    display: grid;
+    justify-content: center;
+}
+
+
+.container2-text {
+    position: absolute; 
+    border: white 1px solid;   
+    display: grid;
+    justify-content: center;
+    top: 50%;
+    left: 47%;
+    text-align: center;
     
+}
+
+.container2 button {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 
 .container2-bg {
     width: 100vw;
     height: 75vh;
+}
+
+.contact-us {
+    display: grid;
 }
