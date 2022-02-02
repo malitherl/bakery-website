@@ -36,7 +36,14 @@ html, body {
 .dropdown {
    display: flex;
    position: relative;
-   margin-left: 10vw;
+   margin-left: 5vw;
+}
+
+.dropdown a {
+    text-decoration: none;
+    margin-top: 1vw;
+    color:blanchedalmond;
+    font-size: 24px;
 }
 
 .dropdown-content {
@@ -60,6 +67,9 @@ html, body {
 .dropdown:hover .dropdown-content {
     display: grid;
     
+}
+.dropdown-links {
+    display: flex;
 }
 
 
