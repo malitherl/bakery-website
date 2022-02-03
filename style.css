@@ -11,6 +11,31 @@ html, body {
 
 }
 
+.heading-img {
+
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    background-image: url('/pexels-photo-209431.jpeg');
+    background-position:bottom;
+    background-size: cover;
+    background-attachment: scroll;
+ 
+}
+
+.heading-text {
+    background-color: whitesmoke;
+    width: 15vw;
+    height: 10vh;
+    text-align: center;
+    margin: 200px auto;
+    
+}
+
+
+
 .navbar a:hover {
     background-color: violet;
 }
