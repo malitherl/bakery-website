@@ -50,12 +50,12 @@
             })
 
 
-            imageCarousel[0].style.display="block";
+            imageCarousel[0].style.display="flex";
 
             function currentImage(i) {
                 imageCarousel[current].style.display="none";
 
-                imageCarousel[i].style.display= "block";
+                imageCarousel[i].style.display= "flex";
                 current=i;
             }
 
