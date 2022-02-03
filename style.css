@@ -37,6 +37,7 @@ html, body {
     font-size: 24px;
 }
 
+
 .dropdown-content {
     display: none;
     color:black;
@@ -65,6 +66,11 @@ html, body {
     width: 100%;
 }
 
+
+.dropdown h1 {
+    display: inline;
+
+}
 
 .carousel {
     left: 0;
@@ -112,6 +118,16 @@ html, body {
     display:block;
 }
 
+#title {
+    text-align: center;
+    margin-left: 25vw;
+    color: blanchedalmond;
+    margin-top: 1vw;
+    
+
+}
+
+
 
 #back {
     margin-left: 10px;
@@ -129,12 +145,17 @@ html, body {
 .title-card {
     border: whitesmoke 1px solid;
     top: 40%;
-    left: 50%;
-    display: grid;
+    margin-left: 46vw;
+    text-align: center;
     padding: 10px;
-    color: whitesmoke;
-    
+    color: blanchedalmond;
+    background-color: rgba(0,0,0,.5);
+    width: 10vw;
+
 }
+
+
+
 
 .arrow {
     display: flex;
@@ -206,11 +227,8 @@ html, body {
 }
 
 .container2{
-    position: relative;
-    z-index: -2;
-    display: flex;
-    justify-content: center;
     width: 100%;
+    position: relative;
 }
 
 
@@ -220,7 +238,7 @@ html, body {
     display: grid;
     justify-content: center;
     top: 50%;
-    left: 47%;
+    left: 41%;
     text-align: center;
     
 }
@@ -232,6 +250,7 @@ html, body {
     text-decoration: none;
     border: none;
     background-color: transparent;
+    margin: 0 auto;
 }
 
 .container2-bg {
@@ -240,6 +259,8 @@ html, body {
     left: 0;
     top: 0;
     overflow: hidden;
+    position: relative;
+    z-index: -3;
 }
 
 .contact-us {
