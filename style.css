@@ -4,26 +4,6 @@ html, body {
     scroll-behavior: smooth;
 }
 
-.navbar a {
-    float: left;
-    margin: 0;
-    padding: 20px;
-
-}
-
-.heading-img {
-
-    height: 50vh;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0; 
-    background-image: url('/pexels-photo-209431.jpeg');
-    background-position:bottom;
-    background-size: cover;
-    background-attachment: scroll;
- 
-}
 
 .heading-text {
     background-color: whitesmoke;
@@ -31,13 +11,7 @@ html, body {
     height: 10vh;
     text-align: center;
     margin: 200px auto;
-    
-}
 
-
-
-.navbar a:hover {
-    background-color: violet;
 }
 
 #bar {
@@ -97,6 +71,13 @@ html, body {
 
 }
 
+.menu {
+    height: 80vh;
+    width: 100%;
+    display: grid;
+}
+
+
 .carousel {
     left: 0;
     top: 0;
@@ -131,7 +112,6 @@ html, body {
 #container {
     position: relative;
     width: 100%;
-
 }
 
 .container-text {
@@ -152,7 +132,16 @@ html, body {
 
 }
 
+#menu {
 
+    background-color: transparent;
+    color: rgb(25, 25, 25);
+}
+
+.menu-container {
+    height: 80vh;
+    width: 100%;
+}
 
 #back {
     margin-left: 10px;
@@ -179,15 +168,10 @@ html, body {
 
 }
 
-
-
-
 .arrow {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .material-icons-outlined {
     font-family: 'Material Icons';
@@ -223,6 +207,24 @@ html, body {
     color: blanchedalmond;
     margin-top: 12px;
 }
+
+.menu-display {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu-element {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+    text-align: center;
+    background-color: royalblue;
+}
+
+
+
 
    .up-arrow {
        position: fixed;
