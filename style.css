@@ -143,6 +143,7 @@ html, body {
     width: 100%;
 }
 
+
 #back {
     margin-left: 10px;
     border-top-right-radius: 10%;
@@ -224,6 +225,33 @@ html, body {
 }
 
 
+.gallery {
+    background-color: aqua;
+    display: grid;
+    justify-content: center;
+}
+
+
+.d {
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.dots {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkslategrey;
+    margin:15px;
+}
+
+
+#active {
+    background-color: lightgrey;
+}
 
 
    .up-arrow {
