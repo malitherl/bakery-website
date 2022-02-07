@@ -213,15 +213,29 @@ html, body {
     display: grid;
     grid-template-columns: auto auto;
     width: 80%;
+    height: fit-content;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .menu-element {
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     border: 1px solid black;
     text-align: center;
     background-color: royalblue;
+    position: relative;
+
+}
+
+.menu-image {
+    position: absolute;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 40vh;
 }
 
 
@@ -235,9 +249,12 @@ html, body {
 .d {
     display: flex;
     width: fit-content;
+    height: fit-content;
     justify-content: space-around;
-    margin-top: 60px;
-    position: absolute;
+    position: relative;
+    background-color: transparent;
+    z-index: 2;
+    top: 90%;
 }
 
 .dots {
