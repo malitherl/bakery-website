@@ -1,0 +1,34 @@
+html, body {
+    margin: 0 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('about-us pictures/pexels-tatiana-2907957.jpg');
+    background-size: cover;
+    display: block;
+    justify-content: center;
+}
+
+.title {
+    margin: 10vh auto;
+    width: fit-content;
+    color: blanchedalmond;
+}
+
+.text-blurbs {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.text-element {
+    width: 70%;
+    margin: 0 auto;
+    color:bisque;
+}

@@ -23,6 +23,7 @@ html, body {
     justify-content: center;
 }
 
+
 .dropdown {
    display: flex;
    position: relative;
@@ -97,7 +98,6 @@ html, body {
     background-color: rgb(25, 25, 25);
 }
 
- 
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -107,7 +107,6 @@ html, body {
     from {opacity: .4}
     to {opacity: 1}
   }
-
 
 #container {
     position: relative;
@@ -128,19 +127,21 @@ html, body {
     margin-left: 25vw;
     color: blanchedalmond;
     margin-top: 1vw;
-    
-
 }
 
 #menu {
-
     background-color: transparent;
-    color: rgb(25, 25, 25);
 }
 
 .menu-container {
     height: 80vh;
     width: 100%;
+    /* Photo by Muhammad Khairul Iddin Adnan from Pexels */
+    background-image: url('pexels-muhammad-khairul-iddin-adnan-808510.jpg');
+    background-size: cover;
+    background-color: rgb(25, 25, 25);
+    opacity: 80%;
+    border-bottom: 5px blanchedalmond solid;
 }
 
 
@@ -166,7 +167,6 @@ html, body {
     color: blanchedalmond;
     background-color: rgba(0,0,0,.5);
     width: 10vw;
-
 }
 
 .arrow {
@@ -221,11 +221,9 @@ html, body {
 .menu-element {
     width: 100%;
     height: 40vh;
-    border: 1px solid black;
     text-align: center;
-    background-color: royalblue;
     position: relative;
-
+   
 }
 
 .menu-image {
@@ -240,7 +238,6 @@ html, body {
 
 
 .gallery {
-    background-color: aqua;
     display: grid;
     justify-content: center;
 }
@@ -270,15 +267,14 @@ html, body {
     background-color: lightgrey;
 }
 
-
-   .up-arrow {
+.up-arrow {
        position: fixed;
        display: grid;
        left: 90%;
        top: 70%;
        background-color: rgba(0,0,0,.5);
        border-radius: 50%;
-
+       z-index: 5;
    }
 
    .up-arrow a {

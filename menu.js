@@ -1,7 +1,5 @@
-
+//Variable Declarations 
 const container = document.getElementById("menu-container");
-//We change these to img urls pulled from a folder 
-let images = [[1,2,3], [4,5,6], [7,8,9]];
 let imageURL = [['/menu pictures/pexels-daria-shevtsova-1580464.jpg', '/menu pictures/pexels-foodie-factor-539451.jpg', '/menu pictures/pexels-pixabay-434258.jpg'],
                 ['/menu pictures/pexels-denys-gromov-4669304.jpg', '/menu pictures/pexels-sebastian-coman-photography-3606800.jpg', '/menu pictures/pexels-sebastian-coman-photography-3791089.jpg'],
                 ['/menu pictures/pexels-suzy-hazelwood-1126359.jpg',  '/menu pictures/pexels-quang-nguyen-vinh-2144112.jpg','/menu pictures/pexels-pixabay-45202.jpg'  ]]
@@ -10,13 +8,15 @@ let imageCredits = [["Photo by Daria Shevtsova from Pexels", "Photo by Foodie Fa
                     ["Photo by Suzy Hazelwood from Pexels", "Photo by Quang Nguyen Vinh from Pexels", "Photo by Pixabey from Pexels"]]
 let gallery = Array.from(container.getElementsByClassName("gallery"));
 
+
+//These loops append the images to their respective DIVs, 
+//and the navigation is created alongside this process. 
+
 for(let i= 0; i < imageURL.length ; i++){
     let d = document.createElement("div")
     d.setAttribute("class", "d")
     let dots = [];
     for(let j=0; j< imageURL[i].length; j++){
-        //To begin working towards this being an image gallery, we need to these elements appearing a class name that specifies their height and width 
-        //another factor to consider is that we're going to need to make a background image class for these divs
         let menuItem = document.createElement("img")
         menuItem.setAttribute("class", "menu-image")
         menuItem.src = imageURL[i][j];
@@ -27,7 +27,6 @@ for(let i= 0; i < imageURL.length ; i++){
             changeImage(i, j);
         })
         dots.push(dot);
-        menuItem.innerText = images[i][j];
         if(j == 0){
             menuItem.style.display="block";
             dot.id = 'active';
