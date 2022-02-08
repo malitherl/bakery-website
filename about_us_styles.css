@@ -66,6 +66,12 @@ body {
     padding: 10px;
   }
 
+.material-icons-outlined a {
+    text-decoration: none;
+    color: bisque;
+}
+
+
   #down-arrow {
     display: block;
     width: fit-content;
