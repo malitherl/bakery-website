@@ -4,8 +4,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    display: grid;
+}
+
+
 #container {
-    position: absolute;
     width: 100%;
     height: 100vh;
     background-image: url('about-us pictures/pexels-tatiana-2907957.jpg');
@@ -31,4 +35,103 @@ html, body {
     width: 70%;
     margin: 0 auto;
     color:bisque;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;  /* Preferred icon size */
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    color: bisque;
+    padding: 10px;
+  }
+
+  #down-arrow {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #newsletter {
+      width: 100%;
+      height: 15vh;
+      background-color: darkolivegreen;
+      position: relative;
+      text-align: center;
+  }
+
+  #story-portal {
+      width: 100%;
+      height: 40vh;
+      overflow: hidden;
+      display: flex;
+
+  }
+
+  #story-image {
+      height: 40vh;
+      width: 50%;
+  }
+
+  #story-intro {
+    width: 40%;
+    text-align: center;
+    margin: 5%;
+  }
+
+
+  #blog-portal {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+  }
+
+  
+  #blog-image {
+    height: 40vh;
+    width: 50%;
+}
+
+#blog-intro {
+  width: 40%;
+  text-align: center;
+  margin: 5%;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+.footer-links {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer a {
+    margin: 30px
 }
