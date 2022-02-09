@@ -5,19 +5,22 @@ html, body {
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: black
 }
 
 #container {
-    background-image: url('/about-us pictures/pexels-maria-orlova-4906491.jpg');
+    background-image: url('/about-us pictures/pexels-roman-odintsov-4552138 (1).jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
     filter: blur(8px);
     position: absolute;
+    opacity: .5;
+    background-color: rgba(0,0,0,.5);
 }
 
 .story-title {
+ 
     position: relative;
     width: 40%;
     margin: 10vh auto;
@@ -37,7 +40,7 @@ body {
 footer {
     height: 7vh;
     width: 100%;
-    background-color: darkolivegreen;
+    background-color:rgba(0,0,0,.4);
     position: absolute ;
 }
 
