@@ -3,6 +3,8 @@ html, body {
     margin: 0 0px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    color:rgb(25, 25, 25);
+    font-family: 'Merriweather', serif;
 }
 
 body{
@@ -98,6 +100,16 @@ body{
     color: blanchedalmond;
     margin-top: 12px;
 }
+
+
+
+@media only screen and (max-width: 1508px) {
+    .dropdown-arrow {
+        display: none;
+    }
+}
+
+
 
 
 .blog-container {

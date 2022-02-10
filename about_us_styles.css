@@ -2,6 +2,7 @@ html, body {
     margin: 0 0px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
 }
 
 body {
@@ -16,12 +17,15 @@ body {
     background-size: cover;
     display: block;
     justify-content: center;
+    overflow: hidden;
 }
 
 .title {
     margin: 10vh auto;
     width: fit-content;
     color: blanchedalmond;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .text-blurbs {
@@ -91,7 +95,7 @@ body {
       height: 40vh;
       overflow: hidden;
       display: flex;
-
+        
   }
 
   #story-image {
@@ -139,5 +143,21 @@ footer {
 }
 
 footer a {
-    margin: 30px
+    margin: 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+button {
+    background-color: darkgreen;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: blanchedalmond;
+    font-size: medium;
+}
+
+button a {
+   text-decoration: none;
+   color: blanchedalmond; 
 }
