@@ -2,6 +2,7 @@ html, body {
     margin: 0 0px;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    color:rgb(25, 25, 25);
 }
 
 
@@ -24,6 +25,13 @@ html, body {
 }
 
 
+
+@media only screen and (max-width: 1508px) {
+    .dropdown-arrow {
+        display: none;
+    }
+}
+
 .dropdown {
    display: flex;
    position: relative;
@@ -44,10 +52,9 @@ html, body {
     top:100%;
     position: absolute;
     height: 30vh;
-    border: 1px black solid;
     z-index: 1;
     padding: 20px;
-    background-color: thistle;
+    background-color: rgba(0,0,0,.5);
 }
 
 .dropdown-content a {
@@ -297,7 +304,7 @@ html, body {
 .container2{
     color: blanchedalmond;
     width: 100%;
-    height: 75vh;
+    height: 77vh;
     /**Image Credit: Photo by alleksana from Pexels**/
     background-image: url('pexels-alleksana-4113922.jpg');
     background-size: cover;
@@ -308,14 +315,28 @@ html, body {
 
 .container2-text {
     text-align: center;
+
     width: 60vw;
     margin: 30vh auto;
-    padding: 10px;
-    
+    padding: 10px;   
 }
 
-.container-text form {
-    display: flex;
+label {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: larger;
+
+}
+
+button {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color:rgb(17, 75, 17);
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    color: blanchedalmond;
+    border-radius: 15px;
 }
 
 
