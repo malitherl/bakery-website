@@ -10,9 +10,9 @@
 
             //file paths and attributions
 
-            let imagesSource = ['/index pictures/pexels-tom-balabaud-1579739.jpg', 
-                        '/index pictures/pexels-creative-vix-370984.jpg',
-                            '/index pictures/pexels-kaboompics-com-6267.jpg' ]
+            let imagesSource = ['./index pictures/pexels-tom-balabaud-1579739.jpg', 
+                        './index pictures/pexels-creative-vix-370984.jpg',
+                            './index pictures/pexels-kaboompics-com-6267.jpg' ]
             let imageCredits= ["Photo by tom balabaud from Pexels", 
                                 "Photo by Creative Vix from Pexels",
                                 "Photo by Kaboompics .com from Pexels"];
