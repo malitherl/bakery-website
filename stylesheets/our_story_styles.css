@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-    background-image: url('/about-us pictures/pexels-roman-odintsov-4552138 (1).jpg');
+    background-image: url('../about-us pictures/pexels-roman-odintsov-4552138 (1).jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
