@@ -120,7 +120,7 @@ body{
 .blog-container {
     height: 80vh;
     width: 100%;
-    background-image: url('/about-us pictures/pexels-maria-orlova-4906491.jpg');
+    background-image: url('../about-us pictures/pexels-maria-orlova-4906491.jpg');
     background-size: cover;
     background-color: rgb(25, 25, 25);
     opacity: 80%;
