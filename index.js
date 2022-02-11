@@ -10,12 +10,13 @@
 
             //file paths and attributions
 
-            let imagesSource = ['pexels-tom-balabaud-1579739.jpg', 
-                        'pexels-creative-vix-370984.jpg',
-                            'pexels-kaboompics-com-6267.jpg' ]
+            let imagesSource = ['/index pictures/pexels-tom-balabaud-1579739.jpg', 
+                        '/index pictures/pexels-creative-vix-370984.jpg',
+                            '/index pictures/pexels-kaboompics-com-6267.jpg' ]
             let imageCredits= ["Photo by tom balabaud from Pexels", 
                                 "Photo by Creative Vix from Pexels",
                                 "Photo by Kaboompics .com from Pexels"];
+            let imageLocation = ['Dublin, Ireland', 'Constanța, Romania', 'Krakow, Poland']
             let imageCarousel =[];
             let current =0;
             
@@ -51,14 +52,19 @@
 
 
             imageCarousel[0].style.display="flex";
+            container.getElementsByClassName("title-card")[0].children[1].textContent = imageLocation[0]
 
             function currentImage(i) {
-                imageCarousel[current].style.display="none";
 
+
+                container.getElementsByClassName("title-card")[0].children[1].textContent = imageLocation[i]
+                imageCarousel[current].style.display="none";
                 imageCarousel[i].style.display= "flex";
+
                 current=i;
             }
 
+            console.log(container.getElementsByClassName("title-card")[0].children[1].textContent)
     
             
            

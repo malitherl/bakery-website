@@ -18,30 +18,31 @@ body{
  }
  
  .dropdown a {
-     text-decoration: none;
-     margin-top: 1vw;
-     color:blanchedalmond;
-     font-size: 24px;
- }
+    text-decoration: none;
+    margin-top: 1vw;
+    color:blanchedalmond;
+    font-size: 20px;
+}
  
- 
- .dropdown-content {
-     display: none;
-     color:black;
-     top:100%;
-     position: absolute;
-     height: 30vh;
-     border: 1px black solid;
-     z-index: 1;
-     padding: 20px;
-     background-color: thistle;
- }
- 
+
+.dropdown-content {
+    display: none;
+    color:black;
+    top:100%;
+    position: absolute;
+    height: fit-content;
+    width: 80%;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(0,0,0,.5);
+}
  .dropdown-content a {
-     margin: 0px;
      padding: 0;
  }
  
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
  
  .dropdown:hover .dropdown-content {
      display: grid; 
@@ -64,6 +65,7 @@ body{
     margin-left: 25vw;
     color: blanchedalmond;
     margin-top: 1vw;
+    font-family: 'Dancing Script', cursive;
 }
 
 .material-icons-outlined {
@@ -95,11 +97,14 @@ body{
     padding: 10px;
   }
 
-.dropdown-arrow {
+
+  .dropdown-arrow {
     font-size: 24px;
     color: blanchedalmond;
-    margin-top: 12px;
+    margin-top: 10px;
+    position: sticky;
 }
+
 
 
 

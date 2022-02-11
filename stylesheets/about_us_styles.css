@@ -3,6 +3,7 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: 'Merriweather', serif;
+    color: blanchedalmond;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 #container {
     width: 100%;
     height: 100vh;
-    background-image: url('about-us pictures/pexels-tatiana-2907957.jpg');
+    background-image: url('/about-us pictures/pexels-tatiana-2907957.jpg');
     background-size: cover;
     display: block;
     justify-content: center;
@@ -75,6 +76,10 @@ body {
     color: bisque;
 }
 
+input {
+     font-family: 'Merriweather', serif; ;
+}
+
 
   #down-arrow {
     display: block;
@@ -85,21 +90,21 @@ body {
   #newsletter {
       width: 100%;
       height: 15vh;
-      background-color: darkolivegreen;
+      background-color: rgba(46, 104, 72, 0.6);
       position: relative;
       text-align: center;
   }
 
   #story-portal {
       width: 100%;
-      height: 40vh;
+      height: 360px;
       overflow: hidden;
       display: flex;
-        
+
   }
 
   #story-image {
-      height: 40vh;
+    height: 360px;
       width: 50%;
   }
 
@@ -107,19 +112,20 @@ body {
     width: 40%;
     text-align: center;
     margin: 5%;
+    color: rgb(25, 25, 25);
   }
 
 
   #blog-portal {
     width: 100%;
-    height: 40vh;
+    height: 360px;
     overflow: hidden;
     display: flex;
   }
 
   
   #blog-image {
-    height: 40vh;
+    height: 360px;
     width: 50%;
 }
 
@@ -127,12 +133,12 @@ body {
   width: 40%;
   text-align: center;
   margin: 5%;
+  color: rgb(25, 25, 25);
 }
 
 footer {
     height: 10vh;
-    width: 100%;
-    background-color: darkolivegreen;
+    width: 100%;  background-color: rgba(46, 104, 72, 0.6);
 }
 
 .footer-links {
@@ -149,7 +155,7 @@ footer a {
 }
 
 button {
-    background-color: darkgreen;
+    background-color: rgba(46, 104, 72, 0.6);
     border: none;
     padding: 5px;
     border-radius: 10px;
@@ -160,4 +166,9 @@ button {
 button a {
    text-decoration: none;
    color: blanchedalmond; 
+}
+
+
+footer a:hover {
+    text-decoration: underline;
 }
