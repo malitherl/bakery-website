@@ -240,7 +240,7 @@ html, body {
     width: 100%;
     height: 77vh;
     /**Image Credit: Photo by alleksana from Pexels**/
-    background-image: url('/index pictures/pexels-alleksana-4113922.jpg');
+    background-image: url('../index pictures/pexels-alleksana-4113922.jpg');
     background-size: cover;
     opacity: 80%;
     background-repeat: no-repeat;
