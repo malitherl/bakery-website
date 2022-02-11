@@ -1,8 +1,8 @@
 //Variable Declarations 
 const container = document.getElementById("menu-container");
-let imageURL = [['/menu pictures/pexels-daria-shevtsova-1580464.jpg', '/menu pictures/pexels-foodie-factor-539451.jpg', '/menu pictures/pexels-pixabay-434258.jpg'],
-                ['/menu pictures/pexels-denys-gromov-4669304.jpg', '/menu pictures/pexels-sebastian-coman-photography-3606800.jpg', '/menu pictures/pexels-sebastian-coman-photography-3791089.jpg'],
-                ['/menu pictures/pexels-suzy-hazelwood-1126359.jpg',  '/menu pictures/pexels-quang-nguyen-vinh-2144112.jpg','/menu pictures/pexels-pixabay-45202.jpg'  ]]
+let imageURL = [['./menu pictures/pexels-daria-shevtsova-1580464.jpg', '/menu pictures/pexels-foodie-factor-539451.jpg', '/menu pictures/pexels-pixabay-434258.jpg'],
+                ['./menu pictures/pexels-denys-gromov-4669304.jpg', '/menu pictures/pexels-sebastian-coman-photography-3606800.jpg', '/menu pictures/pexels-sebastian-coman-photography-3791089.jpg'],
+                ['./menu pictures/pexels-suzy-hazelwood-1126359.jpg',  '/menu pictures/pexels-quang-nguyen-vinh-2144112.jpg','/menu pictures/pexels-pixabay-45202.jpg'  ]]
 let imageCredits = [["Photo by Daria Shevtsova from Pexels", "Photo by Foodie Factor from Pexels", "Photo by Pixabay from Pexels"],
                     ["Photo by Denys Gromov from Pexels", "Photo by Sebastian Coman Photography from Pexels", "Photo by Sebastian Coman Photography from Pexels"],
                     ["Photo by Suzy Hazelwood from Pexels", "Photo by Quang Nguyen Vinh from Pexels", "Photo by Pixabey from Pexels"]]
