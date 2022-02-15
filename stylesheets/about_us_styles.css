@@ -1,132 +1,128 @@
-html, body {
-    margin: 0 0px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    font-family: 'Merriweather', serif;
-    color: blanchedalmond;
+html,
+body {
+  margin: 0 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Merriweather", serif;
+  color: blanchedalmond;
 }
 
 body {
-    display: grid;
+  display: grid;
 }
 
-
 #container {
-    width: 100%;
-    height: 100vh;
-    background-image: url('../about-us pictures/pexels-tatiana-2907957.jpg');
-    background-size: cover;
-    display: block;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../about-us pictures/pexels-tatiana-2907957.jpg");
+  background-size: cover;
+  display: block;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .title {
-    margin: 10vh auto;
-    width: fit-content;
-    color: blanchedalmond;
-    padding: 10px;
-    font-family: 'Dancing Script', cursive;
+  margin: 10vh auto;
+  width: fit-content;
+  color: blanchedalmond;
+  padding: 10px;
+  font-family: "Dancing Script", cursive;
 }
 
 .text-blurbs {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 40%;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .text-element {
-    width: 70%;
-    margin: 0 auto;
-    color:bisque;
+  width: 70%;
+  margin: 0 auto;
+  color: bisque;
 }
 
 .material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 60px;  /* Preferred icon size */
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-    text-align: center;
-    z-index: 1;
-    top: 50%;
-    color: bisque;
-    padding: 10px;
-  }
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px; /* Preferred icon size */
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  color: bisque;
+  padding: 10px;
+}
 
 .material-icons-outlined a {
-    text-decoration: none;
-    color: bisque;
+  text-decoration: none;
+  color: bisque;
 }
 
 input {
-     font-family: 'Merriweather', serif; ;
+  font-family: "Merriweather", serif;
 }
 
+#down-arrow {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
 
-  #down-arrow {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-  }
+#newsletter {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(46, 104, 72, 0.6);
+  position: relative;
+  text-align: center;
+}
 
-  #newsletter {
-      width: 100%;
-      height: 15vh;
-      background-color: rgba(46, 104, 72, 0.6);
-      position: relative;
-      text-align: center;
-  }
+#story-portal {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  display: flex;
+}
 
-  #story-portal {
-      width: 100%;
-      height: 360px;
-      overflow: hidden;
-      display: flex;
+#story-image {
+  height: 360px;
+  width: 50%;
+}
 
-  }
+#story-intro {
+  width: 40%;
+  text-align: center;
+  margin: 5%;
+  color: rgb(25, 25, 25);
+}
 
-  #story-image {
-    height: 360px;
-      width: 50%;
-  }
+#blog-portal {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  display: flex;
+}
 
-  #story-intro {
-    width: 40%;
-    text-align: center;
-    margin: 5%;
-    color: rgb(25, 25, 25);
-  }
-
-
-  #blog-portal {
-    width: 100%;
-    height: 360px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  
-  #blog-image {
-    height: 360px;
-    width: 50%;
+#blog-image {
+  height: 360px;
+  width: 50%;
 }
 
 #blog-intro {
@@ -137,38 +133,38 @@ input {
 }
 
 footer {
-    height: 10vh;
-    width: 100%;  background-color: rgba(46, 104, 72, 0.6);
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(46, 104, 72, 0.6);
 }
 
 .footer-links {
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 footer a {
-    margin: 30px;
-    text-decoration: none;
-    color: blanchedalmond;
+  margin: 30px;
+  text-decoration: none;
+  color: blanchedalmond;
 }
 
 button {
-    background-color: rgba(46, 104, 72, 0.6);
-    border: none;
-    padding: 5px;
-    border-radius: 10px;
-    color: blanchedalmond;
-    font-size: medium;
+  background-color: rgba(46, 104, 72, 0.6);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  color: blanchedalmond;
+  font-size: medium;
 }
 
 button a {
-   text-decoration: none;
-   color: blanchedalmond; 
+  text-decoration: none;
+  color: blanchedalmond;
 }
 
-
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }

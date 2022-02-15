@@ -1,71 +1,71 @@
-         //Scripting for the Image Carousel
+//Scripting for the Image Carousel
 
-            //Storing the images' file paths and alt texts in array allows for easy iteration over the elements 
-            //We also can easily add more elements to the carousel if we wanted. 
+//Storing the images' file paths and alt texts in array allows for easy iteration over the elements
+//We also can easily add more elements to the carousel if we wanted.
 
+const container = document.getElementById("container");
+const scrollBar = document.createElement("DIV");
+scrollBar.setAttribute("id", "bar");
 
-            const container= document.getElementById("container");
-            const scrollBar = document.createElement("DIV");
-            scrollBar.setAttribute("id", "bar");
+//file paths and attributions
 
-            //file paths and attributions
+let imagesSource = [
+  "./index pictures/pexels-tom-balabaud-1579739.jpg",
+  "./index pictures/pexels-creative-vix-370984.jpg",
+  "./index pictures/pexels-kaboompics-com-6267.jpg",
+];
+let imageCredits = [
+  "Photo by tom balabaud from Pexels",
+  "Photo by Creative Vix from Pexels",
+  "Photo by Kaboompics .com from Pexels",
+];
+let imageLocation = ["Dublin, Ireland", "Constanța, Romania", "Krakow, Poland"];
+let imageCarousel = [];
+let current = 0;
 
-            let imagesSource = ['./index pictures/pexels-tom-balabaud-1579739.jpg', 
-                        './index pictures/pexels-creative-vix-370984.jpg',
-                            './index pictures/pexels-kaboompics-com-6267.jpg' ]
-            let imageCredits= ["Photo by tom balabaud from Pexels", 
-                                "Photo by Creative Vix from Pexels",
-                                "Photo by Kaboompics .com from Pexels"];
-            let imageLocation = ['Dublin, Ireland', 'Constanța, Romania', 'Krakow, Poland']
-            let imageCarousel =[];
-            let current =0;
-            
-            //For each file path given, we create a new image element. 
-            //We also create another 'dot' for the navigation at the bottom of the wheel and append the dot to the wheel for each iteration.
-            //Giving the dots data-attributes gives the currentImage(prop) function below a means of transitioning between images. 
-            
-            for(let i =0; i < imagesSource.length ; i++) {
-                let img= document.createElement("img");
-                img.dataset.id=i;
-                img.setAttribute("class", "carousel");
-                img.src=imagesSource[i];
-                img.alt=imageCredits[i];
-                imageCarousel.push(img);
-                container.appendChild(img);
-            }
+//For each file path given, we create a new image element.
+//We also create another 'dot' for the navigation at the bottom of the wheel and append the dot to the wheel for each iteration.
+//Giving the dots data-attributes gives the currentImage(prop) function below a means of transitioning between images.
 
-            document.getElementById("back").addEventListener("click", ()=> {
-                if(current-1 < 0){
-                    currentImage(imageCarousel.length-1);
-                } else {
-                    currentImage(current-1)
-                }
-            })
+for (let i = 0; i < imagesSource.length; i++) {
+  let img = document.createElement("img");
+  img.dataset.id = i;
+  img.setAttribute("class", "carousel");
+  img.src = imagesSource[i];
+  img.alt = imageCredits[i];
+  imageCarousel.push(img);
+  container.appendChild(img);
+}
 
-            document.getElementById("forward").addEventListener("click", ()=> {
-                if(current+1 == imageCarousel.length){
-                    currentImage(0);
-                } else {
-                    currentImage(current+1)
-                }
-            })
+document.getElementById("back").addEventListener("click", () => {
+  if (current - 1 < 0) {
+    currentImage(imageCarousel.length - 1);
+  } else {
+    currentImage(current - 1);
+  }
+});
 
+document.getElementById("forward").addEventListener("click", () => {
+  if (current + 1 == imageCarousel.length) {
+    currentImage(0);
+  } else {
+    currentImage(current + 1);
+  }
+});
 
-            imageCarousel[0].style.display="flex";
-            container.getElementsByClassName("title-card")[0].children[1].textContent = imageLocation[0]
+imageCarousel[0].style.display = "flex";
+container.getElementsByClassName("title-card")[0].children[1].textContent =
+  imageLocation[0];
 
-            function currentImage(i) {
+function currentImage(i) {
+  container.getElementsByClassName("title-card")[0].children[1].textContent =
+    imageLocation[i];
+  imageCarousel[current].style.display = "none";
+  imageCarousel[i].style.display = "flex";
 
+  current = i;
+}
 
-                container.getElementsByClassName("title-card")[0].children[1].textContent = imageLocation[i]
-                imageCarousel[current].style.display="none";
-                imageCarousel[i].style.display= "flex";
-
-                current=i;
-            }
-
-            console.log(container.getElementsByClassName("title-card")[0].children[1].textContent)
-    
-            
-           
-             
+console.log(
+  container.getElementsByClassName("title-card")[0].children[1].textContent
+);

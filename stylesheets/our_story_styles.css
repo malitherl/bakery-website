@@ -1,68 +1,67 @@
-html, body {
-    margin: 0 0px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: black;
-    overflow: hidden;
+  background-color: black;
+  overflow: hidden;
 }
 
 #container {
-    background-image: url('../about-us pictures/pexels-roman-odintsov-4552138 (1).jpg');
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    filter: blur(8px);
-    position: absolute;
-    opacity: .5;
-    background-color: rgba(0,0,0,.5);
-    overflow: hidden;
+  background-image: url("../about-us pictures/pexels-roman-odintsov-4552138 (1).jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  filter: blur(8px);
+  position: absolute;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .story-title {
- 
-    position: relative;
-    width: 40%;
-    margin: 5vh auto;
-    text-align: center;
-    color: blanchedalmond;
-    font-family: 'Dancing Script', cursive;
-    overflow: hidden;
+  position: relative;
+  width: 40%;
+  margin: 5vh auto;
+  text-align: center;
+  color: blanchedalmond;
+  font-family: "Dancing Script", cursive;
+  overflow: hidden;
 }
 
 #story-text {
-    margin-top: 5vh;
-    text-align: left;
-    word-spacing: 2px;
-    line-height: 2;
-    font-size: 18px;
-    font-family: 'Merriweather', serif;
+  margin-top: 5vh;
+  text-align: left;
+  word-spacing: 2px;
+  line-height: 2;
+  font-size: 18px;
+  font-family: "Merriweather", serif;
 }
 
-
 footer {
-    height: 10vh;
-    width: 100%;;
-    position: absolute ;
-    overflow: hidden;
+  height: 10vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
 }
 
 .footer-links {
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 footer a {
-    margin: 30px;
-    color: blanchedalmond;
-    text-decoration: none;
-    font-family: 'Merriweather', serif;
+  margin: 30px;
+  color: blanchedalmond;
+  text-decoration: none;
+  font-family: "Merriweather", serif;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
